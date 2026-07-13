@@ -42,15 +42,6 @@ const CATEGORY_CARDS = [
   bg: 'bg-pink-50'
 },
 {
-  id: 'nuts',
-  label: 'Nuts & Seeds',
-  emoji: '🥜',
-  image: "https://images.unsplash.com/photo-1662749409694-d4aca3e30ba7",
-  alt: 'Mixed assortment of roasted nuts and seeds in small white bowls on a bright airy surface',
-  count: '27 items',
-  bg: 'bg-orange-50'
-},
-{
   id: 'cookies',
   label: 'Cookies',
   emoji: '🍪',

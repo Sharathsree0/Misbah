@@ -19,7 +19,6 @@ export const CATEGORIES = [
 { id: 'drinks', label: 'Drinks', emoji: '🥤' },
 { id: 'kunafa', label: 'Kunafa & Sweets', emoji: '🍮' },
 { id: 'candy', label: 'Candy & Gummies', emoji: '🍬' },
-{ id: 'nuts', label: 'Nuts & Seeds', emoji: '🥜' },
 { id: 'cookies', label: 'Cookies & Biscuits', emoji: '🍪' },
 { id: 'jerky', label: 'Jerky & Meat', emoji: '🥩' },
 { id: 'popcorn', label: 'Popcorn', emoji: '🍿' }];

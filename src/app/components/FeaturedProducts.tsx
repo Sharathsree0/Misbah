@@ -10,7 +10,6 @@ const TABS = [
   { id: 'drinks', label: 'Drinks' },
   { id: 'kunafa', label: 'Kunafa' },
   { id: 'candy', label: 'Candy' },
-  { id: 'nuts', label: 'Nuts' },
 ];
 
 export default function FeaturedProducts() {

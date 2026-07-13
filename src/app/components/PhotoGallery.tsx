@@ -25,13 +25,7 @@ const GALLERY_SLIDES = [
   label: 'Kunafa & Sweets',
   caption: 'Authentic Middle Eastern sweets and pastries'
 },
-{
-  id: 4,
-  src: "https://images.unsplash.com/photo-1582380517173-5e6720d3ac0a",
-  alt: 'Mixed nuts and dried fruits in wooden bowls on a rustic table',
-  label: 'Nuts & Dried Fruits',
-  caption: 'Premium nuts, seeds, and dried fruit mixes'
-},
+
 {
   id: 5,
   src: "https://images.unsplash.com/photo-1687152754495-ffa39fa83ba0",

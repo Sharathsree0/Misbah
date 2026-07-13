@@ -60,7 +60,7 @@ export default function HeroSection() {
                         </div>
 
                         {/* Headline */}
-                        <h1 className="font-display text-hero font-medium text-foreground mb-6">
+                        <h1 className="font-display text-5xl lg:text-6xl xl:text-7xl font-medium text-foreground mb-6">
                             Your daily<br />
                             snack<br />
                             <span className="text-accent italic">market</span>

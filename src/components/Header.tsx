@@ -35,7 +35,7 @@ export default function Header() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <AppLogo size={36} />
+            <AppLogo size={70} />
             <span className="font-display font-semibold text-xl tracking-tight text-foreground hidden sm:block">
               Misbah
             </span>

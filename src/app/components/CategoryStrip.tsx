@@ -1,6 +1,8 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
+import Icon from '@/components/ui/AppIcon';
 
 const CATEGORY_CARDS = [
 {
@@ -76,11 +78,36 @@ const CATEGORY_CARDS = [
   bg: 'bg-red-50'
 }];
 
-
 export default function CategoryStrip() {
+  const [searchValue, setSearchValue] = useState('');
+
   return (
     <section className="py-14 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        
+        {/* DESKTOP SEARCH BAR (Hidden on Mobile) */}
+        <div className="hidden lg:block mb-12">
+          <div className="relative w-full max-w-2xl">
+            <input
+              type="text"
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+              placeholder="Search chips, drinks, kunafa…"
+              className="w-full bg-card border border-border rounded-xl px-5 py-4 pr-[120px] text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring/30 shadow-sm transition-shadow" 
+            />
+            
+            <Link
+              href={`/products${searchValue ? `?q=${encodeURIComponent(searchValue)}` : ''}`}
+              className="absolute right-2 top-2 bottom-2"
+            >
+              <button className="h-full px-6 bg-primary text-primary-foreground text-sm font-semibold rounded-lg hover:bg-primary/90 transition-colors flex items-center gap-2">
+                <Icon name="MagnifyingGlassIcon" size={18} />
+                <span>Search</span>
+              </button>
+            </Link>
+          </div>
+        </div>
+
         {/* Section header */}
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-3">
@@ -91,8 +118,8 @@ export default function CategoryStrip() {
           </div>
           <Link
             href="/products"
-            className="text-sm font-semibold text-accent hover:underline underline-offset-4 flex items-center gap-1 shrink-0">
-            
+            className="text-sm font-semibold text-accent hover:underline underline-offset-4 flex items-center gap-1 shrink-0"
+          >
             View all
             <span aria-hidden="true">→</span>
           </Link>
@@ -129,6 +156,6 @@ export default function CategoryStrip() {
           )}
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

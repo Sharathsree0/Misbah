@@ -14,14 +14,18 @@ export interface Product {
 }
 
 export const CATEGORIES = [
-{ id: 'all', label: 'All Snacks', emoji: '🛒' },
+{ id: 'all', label: 'All items', emoji: '🛒' },
 { id: 'chips', label: 'Chips & Crisps', emoji: '🥔' },
 { id: 'drinks', label: 'Drinks', emoji: '🥤' },
 { id: 'kunafa', label: 'Kunafa & Sweets', emoji: '🍮' },
-{ id: 'candy', label: 'Candy & Gummies', emoji: '🍬' },
 { id: 'cookies', label: 'Cookies & Biscuits', emoji: '🍪' },
 { id: 'jerky', label: 'Jerky & Meat', emoji: '🥩' },
-{ id: 'popcorn', label: 'Popcorn', emoji: '🍿' }];
+{ id: 'popcorn', label: 'Popcorn', emoji: '🍿' },
+{ id: 'cosmetics', label: 'Cosmetics', emoji: '💄' },
+{ id: 'candy', label: 'Candy & Gummies', emoji: '🍬' },
+{ id: 'charcoal', label: 'Charcoal', emoji: '⚫' },
+{ id: 'snacks', label: 'Snacks', emoji: '零食' },
+];
 
 
 export const PRODUCTS: Product[] = [
@@ -41,11 +45,11 @@ export const PRODUCTS: Product[] = [
 },
 {
   id: 2,
-  name: 'Matcha Latte',
+  name: 'Mango Habanero Chips',
   brand: 'FlameBite',
   price: 4.19,
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_193c18994-1781559643230.png",
-  category: 'drinks',
+  category: 'chips',
   rating: 4.6,
   reviewCount: 218,
   badge: 'New',
@@ -134,7 +138,7 @@ export const PRODUCTS: Product[] = [
   name: 'Cheddar Cheese Popcorn',
   brand: 'PopKing',
   price: 4.49,
-  image: "https://images.unsplash.com/photo-1693620189937-8439b947c3a8",
+  image: "https://img.rocket.new/generatedImages/rocket_gen_img_131c95ebf-1767986799912.png",
   category: 'popcorn',
   rating: 4.5,
   reviewCount: 267,
@@ -330,7 +334,273 @@ export const PRODUCTS: Product[] = [
   reviewCount: 198,
   description: 'Fluffy popcorn seasoned with parmesan, rosemary, and garlic.',
   weight: '6 oz'
-}];
+},
+// ── Viva Cosmetics ──────────────────────────────────────────────────────────
+{
+  id: 25,
+  name: 'Viva Face Care Cream Set',
+  brand: 'Viva Cosmetics',
+  price: 18.99,
+  originalPrice: 22.99,
+  image: '/assets/images/viva_face_care.png',
+  category: 'cosmetics',
+  rating: 4.8,
+  reviewCount: 312,
+  badge: 'Best Seller',
+  description: 'Complete face care set — moisturizing cream, serum, and face wash with natural botanical extracts.',
+  weight: '3-piece set'
+},
+{
+  id: 26,
+  name: 'Viva Body Care Lotion',
+  brand: 'Viva Cosmetics',
+  price: 12.49,
+  image: '/assets/images/viva_body_care.png',
+  category: 'cosmetics',
+  rating: 4.7,
+  reviewCount: 245,
+  badge: 'New',
+  description: 'Nourishing body lotion with shea butter and vitamin E. Leaves skin soft and hydrated all day.',
+  weight: '250 ml'
+},
+{
+  id: 27,
+  name: 'Viva Hair Care Shampoo & Conditioner',
+  brand: 'Viva Cosmetics',
+  price: 15.99,
+  originalPrice: 19.99,
+  image: '/assets/images/viva_hair_care.png',
+  category: 'cosmetics',
+  rating: 4.6,
+  reviewCount: 189,
+  description: 'Strengthening shampoo and conditioner duo with keratin and argan oil for silky smooth hair.',
+  weight: '2 × 200 ml'
+},
+{
+  id: 28,
+  name: 'Viva Make Up Collection',
+  brand: 'Viva Cosmetics',
+  price: 24.99,
+  originalPrice: 29.99,
+  image: '/assets/images/viva_makeup.png',
+  category: 'cosmetics',
+  rating: 4.9,
+  reviewCount: 421,
+  badge: 'Fan Favorite',
+  description: 'Premium makeup set including long-lasting lipstick, foundation, and eyeshadow palette.',
+  weight: '3-piece set'
+},
+{
+  id: 29,
+  name: 'Viva Body Painting Kit',
+  brand: 'Viva Cosmetics',
+  price: 21.99,
+  image: '/assets/images/viva_body_painting.png',
+  category: 'cosmetics',
+  rating: 4.5,
+  reviewCount: 134,
+  badge: 'New',
+  description: 'Professional body painting kit with vibrant, skin-safe colors. Perfect for events and artistic expression.',
+  weight: '12-color set'
+},
+// ── Kurkos Premium Chips ────────────────────────────────────────────────────
+{
+  id: 30,
+  name: 'Kurkos Premium Chips Variety Pack',
+  brand: 'Kurkos',
+  price: 9.99,
+  originalPrice: 12.49,
+  image: '/assets/images/kurkos_chips_variety.png',
+  category: 'chips',
+  rating: 4.7,
+  reviewCount: 287,
+  badge: 'Best Seller',
+  description: 'Kurkos Premium Chips variety pack — Seaweed, Chocolate, Cheese, and Red Chili flavors in one box.',
+  weight: '4 × 60 g'
+},
+{
+  id: 31,
+  name: 'Kurkos Red Chili Chips',
+  brand: 'Kurkos',
+  price: 3.49,
+  image: '/assets/images/kurkos_red_chili_chips.png',
+  category: 'chips',
+  rating: 4.6,
+  reviewCount: 198,
+  badge: 'Hot Pick',
+  description: 'Fiery red chili flavored premium potato chips by Kurkos — bold heat with a satisfying crunch.',
+  weight: '60 g'
+},
+// ── Sajeeb Agro Food ────────────────────────────────────────────────────────
+{
+  id: 32,
+  name: 'Sajeeb Mango Juice',
+  brand: 'Sajeeb',
+  price: 2.99,
+  image: '/assets/images/sajeeb_mango_juice.png',
+  category: 'drinks',
+  rating: 4.5,
+  reviewCount: 163,
+  description: 'Sajeeb Agro Food real mango juice — made from fresh mangoes with no artificial colors.',
+  weight: '250 ml'
+},
+{
+  id: 33,
+  name: 'Sajeeb Agro Food Snack Pack',
+  brand: 'Sajeeb',
+  price: 7.49,
+  originalPrice: 9.99,
+  image: '/assets/images/sajeeb_food_products.png',
+  category: 'cookies',
+  rating: 4.4,
+  reviewCount: 112,
+  badge: 'New',
+  description: 'Sajeeb Agro Food assorted snack pack — biscuits, olive oil, and fruit snacks from a trusted processor.',
+  weight: 'Assorted'
+},
+// ── Puro ────────────────────────────────────────────────────────────────────
+{
+  id: 34,
+  name: 'Puro Noodles & Snacks Bundle',
+  brand: 'Puro',
+  price: 8.99,
+  originalPrice: 11.49,
+  image: '/assets/images/puro_food_products.png',
+  category: 'cookies',
+  rating: 4.6,
+  reviewCount: 221,
+  badge: 'Popular',
+  description: 'Puro brand bundle — instant noodles, toast biscuits, fried peas, and kids juice cartons in one pack.',
+  weight: 'Assorted'
+},
+{
+  id: 35,
+  name: 'Puro Kids Juice Pack',
+  brand: 'Puro',
+  price: 4.99,
+  image: '/assets/images/puro_food_products.png',
+  category: 'drinks',
+  rating: 4.7,
+  reviewCount: 178,
+  description: 'Puro Kids fruit juice cartons in mango, pineapple, and mixed fruit flavors. No added preservatives.',
+  weight: '6 × 200 ml'
+},
+  // --- CHARCOAL CATEGORY ---
+  {
+    id: 1,
+    name: 'Briquettes Cube Premium',
+    brand: 'PT. Misbah Fair Trading Center',
+    price: 1.25,
+    originalPrice: 1.50,
+    image: "/assets/images/charcoal-cube.png",
+    category: 'charcoal',
+    rating: 4.9,
+    reviewCount: 128,
+    badge: 'Premium',
+    description: '100% Coconut Shell Charcoal, high heat, low ash, ideal for long-duration grilling.',
+    weight: '10 kg'
+  },
+  {
+    id: 2,
+    name: 'Finger Briquettes Premium',
+    brand: 'PT. Misbah Fair Trading Center',
+    price: 1.10,
+    originalPrice: 1.30,
+    image: "/assets/images/charcoal-finger.png",
+    category: 'charcoal',
+    rating: 4.7,
+    reviewCount: 95,
+    badge: 'Best Seller',
+    description: 'High-quality coconut shell charcoal briquettes in finger shape for consistent burning.',
+    weight: '10 kg'
+  },
+  {
+    id: 3,
+    name: 'Rectangle Briquettes Premium',
+    brand: 'PT. Misbah Fair Trading Center',
+    price: 1.15,
+    originalPrice: 1.35,
+    image: "/assets/images/charcoal-rectangle.png",
+    category: 'charcoal',
+    rating: 4.8,
+    reviewCount: 82,
+    badge: 'Recommended',
+    description: 'Rectangle-cut charcoal for professional BBQ use, offering steady heat and durability.',
+    weight: '10 kg'
+  },
+  {
+    id: 4,
+    name: 'Briquettes BBQ Hexagonal',
+    brand: 'PT. Misbah Fair Trading Center',
+    price: 1.30,
+    originalPrice: 1.60,
+    image: "/assets/images/charcoal-hexagonal.png",
+    category: 'charcoal',
+    rating: 4.9,
+    reviewCount: 150,
+    badge: 'New',
+    description: 'Coconut shell and hardwood charcoal, unique hexagonal shape, perfect for high-heat searing.',
+    weight: '10 kg'
+  },
+
+  // --- SNACKS CATEGORY ---
+  {
+    id: 5,
+    name: 'Piezza Beef Pepperoni',
+    brand: 'Piezza',
+    price: 12.99,
+    originalPrice: 15.00,
+    image: "/assets/images/piezza-beef.png",
+    category: 'snacks',
+    rating: 4.9,
+    reviewCount: 512,
+    badge: 'New',
+    description: 'Mini pizza bites with savory beef pepperoni topping. 24 pieces per box.',
+    weight: '504 gr'
+  },
+  {
+    id: 6,
+    name: 'Piezza Truffle Mushroom',
+    brand: 'Piezza',
+    price: 13.99,
+    originalPrice: 16.00,
+    image: "/assets/images/piezza-truffle.png",
+    category: 'snacks',
+    rating: 5.0,
+    reviewCount: 289,
+    badge: 'Fan Favorite',
+    description: 'Gourmet mini pizza bites infused with rich truffle and mushroom flavor.',
+    weight: '504 gr'
+  },
+  {
+    id: 7,
+    name: 'Piezza Bolognese',
+    brand: 'Piezza',
+    price: 12.99,
+    originalPrice: 15.00,
+    image: "/assets/images/piezza-bolognese.png",
+    category: 'snacks',
+    rating: 4.8,
+    reviewCount: 340,
+    badge: 'Top Rated',
+    description: 'Classic Italian-style bolognese mini pizza bites. 18-month shelf life.',
+    weight: '504 gr'
+  },
+  {
+    id: 8,
+    name: 'Piezza Variety Pack',
+    brand: 'Piezza',
+    price: 14.50,
+    originalPrice: 17.00,
+    image: "/assets/images/piezza-variety.png",
+    category: 'snacks',
+    rating: 4.7,
+    reviewCount: 198,
+    badge: 'Bundle',
+    description: 'Mixed box featuring all three Piezza flavors: Beef, Truffle, and Bolognese.',
+    weight: '504 gr'
+  }
+];
 
 
 export const FEATURED_PRODUCTS = PRODUCTS.filter((p) => p.badge).slice(0, 8);

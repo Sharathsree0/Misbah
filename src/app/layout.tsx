@@ -24,14 +24,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: 'Misbah — Your Daily Snack Market',
+  title: 'Misbah — Your Daily needs Market',
   description: 'Browse chips, drinks, kunafa, candy, and 200+ snack categories at Misbah. Fresh snacks delivered fast — your everyday snack market.',
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
   },
   openGraph: {
-    title: 'Misbah — Daily Snack Market',
-    description: 'Browse 200+ snack categories. Chips, drinks, kunafa and more.',
+    title: 'Misbah — Daily needs Market',
+    description: 'Browse 200+ categories. Chips, drinks, kunafa and more.',
     images: [{ url: '/assets/images/app_logo.png', width: 1200, height: 630 }],
   },
 };

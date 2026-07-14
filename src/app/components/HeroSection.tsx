@@ -12,7 +12,7 @@ const HERO_IMAGES = [
         alt: "Assorted snack bags and chips arranged on a bright, clean white surface"
     },
     {
-        id: 2, 
+        id: 2,
         src: "https://img.rocket.new/generatedImages/rocket_gen_img_1e0313789-1774365101100.png",
         alt: 'Golden kunafa dessert topped with crushed pistachios on a round plate',
         label: 'Kunafa & Sweets',
@@ -20,6 +20,13 @@ const HERO_IMAGES = [
     },
     {
         id: 3,
+        src: '/assets/images/viva_makeup.png',
+        alt: 'Premium makeup set including long-lasting lipstick, foundation, and eyeshadow palette.',
+        label: 'Make Up',
+        caption: 'Enhance your beauty with our high-quality makeup collection.'
+    },
+    {
+        id: 4,
         src: 'https://images.unsplash.com/photo-1628210473497-92b600c4007b',
         alt: 'Assorted cold drinks and beverages'
     }
@@ -79,7 +86,7 @@ export default function HeroSection() {
                         {/* BUTTON FOR MOBILE */}
                         {/* FIXED: Applied button classes directly to Link component */}
                         <div className="lg:hidden mt-2">
-                             <Link href="/products" className="btn-accent flex w-full items-center justify-center px-8 py-4 text-base shadow-lg hover:shadow-xl transition-all rounded-lg font-semibold">
+                            <Link href="/products" className="btn-accent flex w-full items-center justify-center px-8 py-4 text-base shadow-lg hover:shadow-xl transition-all rounded-lg font-semibold">
                                 Shop All items <span aria-hidden="true" className="ml-2">→</span>
                             </Link>
                         </div>
@@ -107,7 +114,7 @@ export default function HeroSection() {
                                         alt={img.alt}
                                         fill
                                         className="object-cover object-center"
-                                        priority={idx === 0} 
+                                        priority={idx === 0}
                                         sizes="(max-width: 1024px) 100vw, 50vw"
                                     />
                                 </div>

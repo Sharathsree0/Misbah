@@ -13,6 +13,13 @@ const GALLERY_SLIDES = [
 },
 {
   id: 2,
+  src: '/assets/images/viva_makeup.png',
+  alt: 'Premium makeup set including long-lasting lipstick, foundation, and eyeshadow palette.',
+  label: 'Make Up',
+  caption: 'Enhance your beauty with our high-quality makeup collection.'
+},
+{
+  id: 4,
   src: "https://images.unsplash.com/photo-1628210473497-92b600c4007b",
   alt: 'Assorted cold drinks and beverages in glass bottles on ice',
   label: 'Drinks & Beverages',

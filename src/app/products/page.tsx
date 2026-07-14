@@ -6,7 +6,7 @@ import ProductsClient from './components/ProductsClient';
 
 export const metadata = {
   title: 'All products — SnackHaven',
-  description: 'Browse 500+ snacks: chips, drinks, kunafa, candy, nuts, cookies, jerky, and popcorn. Filter by category and add to cart.',
+  description: 'Browse 500+ snacks: chips, drinks, kunafa, candy,cosmetics , cookies, jerky, and popcorn. Filter by category and add to cart.',
 };
 
 export default function ProductsPage() {

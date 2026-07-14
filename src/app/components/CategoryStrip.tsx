@@ -67,6 +67,15 @@ const CATEGORY_CARDS = [
   alt: 'Strips of dried beef jerky',
   count: '11 items',
   bg: 'bg-red-50'
+},
+{
+  id: 'cosmetics',
+  label: 'Cosmetics',
+  emoji: '💄',
+  image: '/assets/images/viva_makeup.png',
+  alt: 'Viva Cosmetics makeup collection including lipstick, foundation and eyeshadow palette on mint green background',
+  count: '5 items',
+  bg: 'bg-rose-50'
 }];
 
 export default function CategoryStrip() {

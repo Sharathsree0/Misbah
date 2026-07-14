@@ -20,7 +20,7 @@ export default function FeaturedProducts() {
     : PRODUCTS?.filter(p => p?.category === activeTab)?.slice(0, 8);
 
   return (
-    <section className="py-14 bg-secondary/40">
+    <section className="py-0 bg-secondary/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">

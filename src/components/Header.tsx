@@ -34,24 +34,25 @@ export default function Header() {
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
+          <Link href="/" className="flex items-center gap-3 shrink-0">
             <AppLogo size={125} />
-            <span className="font-display font-semibold text-xl tracking-tight text-foreground hidden sm:block">
+            {/* UPDATED: Changed to a sleek sans-serif font and a deep maroon color to match the logo wings! */}
+            <span className="font-sans font-extrabold text-2xl lg:text-2xl tracking-tighter text-[#4a1c1c] hidden sm:block">
               Misbah
             </span>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-8">
             <Link
               href="/"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-base lg:text-lg font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Home
             </Link>
             <Link
               href="/products"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-base lg:text-lg font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Products
             </Link>
@@ -88,9 +89,12 @@ export default function Header() {
       {mobileOpen && (
         <div className="fixed inset-0 z-[100] bg-background/98 backdrop-blur-md flex flex-col">
           <div className="flex items-center justify-between px-4 h-16 border-b border-border">
-            <div className="flex items-center gap-2">
-              <AppLogo size={36} />
-              <span className="font-display font-semibold text-xl text-foreground">Misbah</span>
+            <div className="flex items-center gap-3">
+              <AppLogo size={115} />
+              {/* UPDATED MOBILE TEXT: Matches the desktop styling */}
+              <span className="font-sans font-extrabold text-2xl tracking-tighter text-[#4a1c1c]">
+                Misbah
+              </span>
             </div>
             <button
               className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-secondary transition-colors"

@@ -10,7 +10,7 @@ const CATEGORY_CARDS = [
   label: 'Chips & Crisps',
   emoji: '🥔',
   image: "https://images.unsplash.com/photo-1697250273205-fc80380ddaad",
-  alt: 'Bright orange chip bag with bold graphics on clean white background, well-lit product shot',
+  alt: 'Bright orange chip bag with bold graphics on clean white background',
   count: '48 items',
   bg: 'bg-amber-50'
 },
@@ -19,7 +19,7 @@ const CATEGORY_CARDS = [
   label: 'Drinks',
   emoji: '🥤',
   image: "https://images.unsplash.com/photo-1710566277931-2d416cd494cc",
-  alt: 'Colorful assortment of beverage cans and bottles on a bright surface, airy daylight setting',
+  alt: 'Colorful assortment of beverage cans and bottles',
   count: '32 items',
   bg: 'bg-sky-50'
 },
@@ -28,7 +28,7 @@ const CATEGORY_CARDS = [
   label: 'Kunafa & Sweets',
   emoji: '🍮',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1e0313789-1774365101100.png",
-  alt: 'Golden kunafa pastry topped with crushed pistachios on a bright white plate, natural daylight',
+  alt: 'Golden kunafa pastry topped with crushed pistachios',
   count: '18 items',
   bg: 'bg-yellow-50'
 },
@@ -37,7 +37,7 @@ const CATEGORY_CARDS = [
   label: 'Candy & Gummies',
   emoji: '🍬',
   image: "https://images.unsplash.com/photo-1695887464157-31541bdbb0cf",
-  alt: 'Bright colorful gummy bears and candy scattered on a clean white surface, bright studio lighting',
+  alt: 'Bright colorful gummy bears and candy',
   count: '41 items',
   bg: 'bg-pink-50'
 },
@@ -46,7 +46,7 @@ const CATEGORY_CARDS = [
   label: 'Cookies',
   emoji: '🍪',
   image: "https://images.unsplash.com/photo-1706629854874-f7b240f06e26",
-  alt: 'Fresh baked chocolate chip cookies on a bright clean white parchment, warm natural light',
+  alt: 'Fresh baked chocolate chip cookies',
   count: '36 items',
   bg: 'bg-stone-50'
 },
@@ -55,7 +55,7 @@ const CATEGORY_CARDS = [
   label: 'Popcorn',
   emoji: '🍿',
   image: "https://images.unsplash.com/photo-1693620189937-8439b947c3a8",
-  alt: 'Overflowing bucket of fluffy popcorn on a bright white background, clean product photography',
+  alt: 'Overflowing bucket of fluffy popcorn',
   count: '14 items',
   bg: 'bg-yellow-50'
 },
@@ -64,7 +64,7 @@ const CATEGORY_CARDS = [
   label: 'Jerky & Meat',
   emoji: '🥩',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1d274fa30-1775369435024.png",
-  alt: 'Strips of dried beef jerky on a bright clean wooden board, well-lit daylight food photography',
+  alt: 'Strips of dried beef jerky',
   count: '11 items',
   bg: 'bg-red-50'
 }];
@@ -73,12 +73,13 @@ export default function CategoryStrip() {
   const [searchValue, setSearchValue] = useState('');
 
   return (
-    <section className="py-14 bg-background">
+    <section className="py-0 lg:pt-8 lg:pb-14 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        
-        {/* DESKTOP SEARCH BAR (Hidden on Mobile) */}
-        <div className="hidden lg:block mb-12">
-          <div className="relative w-full max-w-2xl">
+  
+        {/* MOBILE-ONLY SEARCH BAR & PILLS */}
+        <div className="lg:hidden mb-10">
+          {/* Search Input */}
+          <div className="relative w-full max-w-2xl mx-auto">
             <input
               type="text"
               value={searchValue}
@@ -93,9 +94,20 @@ export default function CategoryStrip() {
             >
               <button className="h-full px-6 bg-primary text-primary-foreground text-sm font-semibold rounded-lg hover:bg-primary/90 transition-colors flex items-center gap-2">
                 <Icon name="MagnifyingGlassIcon" size={18} />
-                <span>Search</span>
+                <span className="hidden sm:inline">Search</span>
               </button>
             </Link>
+          </div>
+
+          {/* Quick Option Pills */}
+          <div className="flex flex-wrap gap-2 mt-4">
+            {['Chips', 'Drinks', 'Kunafa', 'Candy', 'Nuts'].map((cat) => (
+              <Link key={cat} href={`/products?category=${cat.toLowerCase()}`}>
+                <span className="category-pill text-xs px-4 py-2 bg-secondary rounded-full inline-block font-medium text-secondary-foreground hover:bg-secondary/80 transition-colors cursor-pointer border border-border">
+                  {cat}
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
 

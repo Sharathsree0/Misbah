@@ -25,7 +25,6 @@ const GALLERY_SLIDES = [
   label: 'Kunafa & Sweets',
   caption: 'Authentic Middle Eastern sweets and pastries'
 },
-
 {
   id: 5,
   src: "https://images.unsplash.com/photo-1687152754495-ffa39fa83ba0",
@@ -33,7 +32,6 @@ const GALLERY_SLIDES = [
   label: 'Candy & Gummies',
   caption: 'Sweet treats and gummies for all ages'
 }];
-
 
 export default function PhotoGallery() {
   const [current, setCurrent] = useState(0);
@@ -62,7 +60,7 @@ export default function PhotoGallery() {
   }, [next]);
 
   return (
-    <section className="py-16 bg-secondary/30">
+    <section className="pt-5 pb-6 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section header */}
         <div className="flex items-center justify-between mb-8">
@@ -94,10 +92,10 @@ export default function PhotoGallery() {
           </div>
         </div>
 
-        {/* Gallery layout: large main + thumbnails */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          {/* Main slide */}
-          <div className="lg:col-span-2 relative rounded-2xl overflow-hidden bg-card" style={{ height: 'clamp(280px, 45vh, 500px)' }}>
+        {/* Gallery layout: Centered with max-w-5xl */}
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-4">
+          {/* Main slide - takes up 3 columns */}
+          <div className="lg:col-span-3 relative rounded-2xl overflow-hidden bg-card" style={{ height: 'clamp(280px, 45vh, 500px)' }}>
             {GALLERY_SLIDES.map((slide, idx) =>
             <div
               key={slide.id}
@@ -108,7 +106,7 @@ export default function PhotoGallery() {
                 alt={slide.alt}
                 fill
                 className="object-cover object-center"
-                sizes="(max-width: 1024px) 100vw, 66vw" />
+                sizes="(max-width: 1024px) 100vw, 75vw" />
               
                 {/* Overlay label */}
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
@@ -138,18 +136,16 @@ export default function PhotoGallery() {
             </button>
           </div>
 
-          {/* Thumbnail strip */}
+          {/* Thumbnail strip - takes up 1 column on desktop, horizontal scroll on mobile */}
           <div className="flex lg:flex-col gap-3 overflow-x-auto lg:overflow-y-auto lg:max-h-[500px] pb-1 lg:pb-0">
             {GALLERY_SLIDES.map((slide, idx) =>
             <button
               key={slide.id}
               onClick={() => goTo(idx)}
-              className={`relative shrink-0 rounded-xl overflow-hidden transition-all duration-300 ${
-              idx === current ?
-              'ring-2 ring-accent scale-[1.02]' :
-              'opacity-60 hover:opacity-90'}`
+              className={`relative shrink-0 rounded-xl overflow-hidden transition-all duration-300 h-[90px]
+                min-w-[120px] max-w-[160px] w-[28vw] lg:min-w-0 lg:max-w-none lg:w-full
+                ${idx === current ? 'ring-2 ring-accent scale-[1.02]' : 'opacity-60 hover:opacity-90'}`
               }
-              style={{ width: 'clamp(100px, 28vw, 160px)', height: '90px' }}
               aria-label={`View ${slide.label}`}>
               
                 <AppImage
@@ -157,10 +153,10 @@ export default function PhotoGallery() {
                 alt={slide.alt}
                 fill
                 className="object-cover object-center"
-                sizes="160px" />
+                sizes="(max-width: 1024px) 30vw, 25vw" />
               
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 to-transparent" />
-                <span className="absolute bottom-2 left-2 right-2 text-white text-[10px] font-semibold leading-tight line-clamp-1">
+                <span className="absolute bottom-2 left-2 right-2 text-white text-[10px] font-semibold leading-tight line-clamp-1 text-left">
                   {slide.label}
                 </span>
               </button>
@@ -182,6 +178,6 @@ export default function PhotoGallery() {
           )}
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

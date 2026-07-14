@@ -15,14 +15,14 @@ export default function CTABanner() {
               What are you craving?
             </h2>
             <p className="text-primary-foreground/70 text-sm sm:text-base max-w-md">
-              Browse 500+ snacks across every category. New arrivals added every day.
+              Browse 500+ items across every category. New arrivals added every day.
             </p>
           </div>
 
           <div className="relative z-10 flex flex-col sm:flex-row gap-3 shrink-0">
             <Link href="/products">
               <button className="btn-accent text-base px-8 py-3.5">
-                Shop All Snacks
+                Shop All items
               </button>
             </Link>
             <Link href="/products?category=kunafa">

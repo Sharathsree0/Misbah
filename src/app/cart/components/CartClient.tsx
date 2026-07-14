@@ -65,11 +65,11 @@ export default function CartClient() {
           Your cart is empty
         </h1>
         <p className="text-muted-foreground text-sm mb-8">
-          Looks like you haven&apos;t added any snacks yet.
+          Looks like you haven&apos;t added any items yet.
         </p>
         <Link href="/products">
           <button className="btn-accent px-8 py-3.5">
-            Browse Snacks
+            Browse items
           </button>
         </Link>
       </div>

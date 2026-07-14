@@ -30,14 +30,14 @@ export default function FeaturedProducts() {
               <span className="section-label text-muted-foreground">Handpicked for you</span>
             </div>
             <h2 className="font-display text-section-title font-medium text-foreground">
-              Featured Snacks
+              Featured products
             </h2>
           </div>
           <Link
             href="/products"
             className="text-sm font-semibold text-accent hover:underline underline-offset-4 flex items-center gap-1 shrink-0"
           >
-            Browse all products →
+            Browse all items →
           </Link>
         </div>
 

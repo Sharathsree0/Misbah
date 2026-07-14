@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import ProductsClient from './components/ProductsClient';
 
 export const metadata = {
-  title: 'All Snacks — SnackHaven',
+  title: 'All products — SnackHaven',
   description: 'Browse 500+ snacks: chips, drinks, kunafa, candy, nuts, cookies, jerky, and popcorn. Filter by category and add to cart.',
 };
 

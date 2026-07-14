@@ -31,8 +31,7 @@ export default function WhySnackHaven() {
         {/* Desktop: 8-col bento grid */}
         <div className="hidden lg:grid lg:grid-cols-8 gap-4 auto-rows-[220px]">
 
-          {/* Card 1: FastDelivery — col 1-3 */}
-          <div className="lg:col-span-3 bg-primary text-primary-foreground rounded-2xl p-8 flex flex-col justify-between relative overflow-hidden group">
+          {/* <div className="lg:col-span-3 bg-primary text-primary-foreground rounded-2xl p-8 flex flex-col justify-between relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-40 h-40 blob-accent opacity-20 pointer-events-none" />
             <div className="w-12 h-12 rounded-xl bg-primary-foreground/10 flex items-center justify-center mb-4">
               <Icon name="TruckIcon" size={24} className="text-accent" />
@@ -40,6 +39,13 @@ export default function WhySnackHaven() {
             <div>
               <h3 className="text-xl font-display font-medium mb-1">Same-day delivery</h3>
               <p className="text-sm text-primary-foreground/70">Order before 3 PM and your snacks arrive today. Free on orders over $25.</p>
+            </div>
+          </div>  */}
+           <div className="lg:col-span-3 bg-primary/5 border border-border rounded-2xl p-8 flex flex-col justify-between hover:border-accent/40 transition-colors">
+            <span className="section-label text-muted-foreground">Shop anywhere</span>
+            <div>
+              <h3 className="text-xl font-display font-medium text-foreground mb-2">Mobile-first experience</h3>
+              <p className="text-sm text-muted-foreground">Optimized for every device. Browse and order from your phone in seconds.</p>
             </div>
           </div>
 
@@ -67,35 +73,34 @@ export default function WhySnackHaven() {
             </div>
           </div>
 
-          {/* Card 4: FreeReturns — col 1-2, row 2 */}
-          <div className="lg:col-span-2 bg-secondary border border-border rounded-2xl p-8 flex flex-col justify-between hover:border-accent/40 transition-colors">
+          {/* <div className="lg:col-span-2 bg-secondary border border-border rounded-2xl p-8 flex flex-col justify-between hover:border-accent/40 transition-colors">
             <span className="section-label text-muted-foreground">Hassle-free</span>
             <div>
               <p className="text-xs text-muted-foreground mb-1">Satisfaction</p>
               <p className="text-2xl font-display font-bold text-foreground">Guaranteed</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Card 5: SecurePayment — col 3-5, row 2 */}
-          <div className="lg:col-span-3 bg-secondary/60 border border-border rounded-2xl p-8 flex flex-col justify-between relative overflow-hidden hover:border-accent/40 transition-colors group">
+          {/* <div className="lg:col-span-3 bg-secondary/60 border border-border rounded-2xl p-8 flex flex-col justify-between relative overflow-hidden hover:border-accent/40 transition-colors group">
             <div className="absolute top-0 right-0 w-32 h-32 rounded-full border-[16px] border-accent/10 -rotate-45 group-hover:rotate-0 transition-transform duration-700" />
             <span className="section-label text-muted-foreground">Payments</span>
             <div>
               <h3 className="text-xl font-display font-medium text-foreground mb-1">Secure checkout</h3>
               <p className="text-sm text-muted-foreground">SSL-encrypted. Apple Pay, Google Pay, and all major cards accepted.</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Card 6: MobileApp — col 6-8, row 2 */}
-          <div className="lg:col-span-3 bg-primary/5 border border-border rounded-2xl p-8 flex flex-col justify-between hover:border-accent/40 transition-colors">
+          {/* <div className="lg:col-span-3 bg-primary/5 border border-border rounded-2xl p-8 flex flex-col justify-between hover:border-accent/40 transition-colors">
             <span className="section-label text-muted-foreground">Shop anywhere</span>
             <div>
               <h3 className="text-xl font-display font-medium text-foreground mb-2">Mobile-first experience</h3>
               <p className="text-sm text-muted-foreground">Optimized for every device. Browse and order from your phone in seconds.</p>
             </div>
-          </div>
+          </div> */}
         </div>
-
+            
         {/* Mobile: simple vertical stack */}
         <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[

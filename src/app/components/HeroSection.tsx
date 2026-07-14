@@ -60,7 +60,7 @@ export default function HeroSection() {
                         {/* Headline */}
                         <h1 className="font-display text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-medium text-foreground mb-4 sm:mb-5 leading-tight lg:leading-[1.1] lg:tracking-tight">
                             Your daily<br />
-                            snack<br />
+                            needs<br />
                             <span className="text-accent italic">market</span>
                         </h1>
 
@@ -72,7 +72,7 @@ export default function HeroSection() {
                         {/* FIXED: Applied button classes directly to Link component */}
                         <div className="hidden lg:block mb-8">
                             <Link href="/products" className="btn-accent inline-flex items-center px-8 py-4 text-base shadow-lg hover:shadow-xl transition-all w-fit rounded-lg font-semibold">
-                                Shop All Snacks <span aria-hidden="true" className="ml-2">→</span>
+                                Shop All items <span aria-hidden="true" className="ml-2">→</span>
                             </Link>
                         </div>
 
@@ -80,7 +80,7 @@ export default function HeroSection() {
                         {/* FIXED: Applied button classes directly to Link component */}
                         <div className="lg:hidden mt-2">
                              <Link href="/products" className="btn-accent flex w-full items-center justify-center px-8 py-4 text-base shadow-lg hover:shadow-xl transition-all rounded-lg font-semibold">
-                                Shop All Snacks <span aria-hidden="true" className="ml-2">→</span>
+                                Shop All items <span aria-hidden="true" className="ml-2">→</span>
                             </Link>
                         </div>
                     </div>

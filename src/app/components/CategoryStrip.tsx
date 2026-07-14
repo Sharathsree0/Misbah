@@ -9,7 +9,7 @@ const CATEGORY_CARDS = [
   id: 'chips',
   label: 'Chips & Crisps',
   emoji: '🥔',
-  image: "https://images.unsplash.com/photo-1697250273205-fc80380ddaad",
+  image: "https://img.rocket.new/generatedImages/rocket_gen_img_10408a821-1765079971303.png",
   alt: 'Bright orange chip bag with bold graphics on clean white background',
   count: '48 items',
   bg: 'bg-amber-50'

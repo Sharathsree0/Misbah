@@ -48,7 +48,7 @@ export const PRODUCTS: Product[] = [
   name: 'Mango Habanero Chips',
   brand: 'FlameBite',
   price: 4.19,
-  image: "/public/assets/images/Mango-Habanero-Chips.png",
+  image: '/assets/images/Mango-Habanero-Chips.png',
   category: 'drink',
   rating: 4.6,
   reviewCount: 218,
